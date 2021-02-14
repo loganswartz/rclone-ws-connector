@@ -1,0 +1,25 @@
+{
+  "name": "rclone-ws-connector",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "scripts": {
+    "start": "tsc && node dist/app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/express": "^4.16.1",
+    "tslint": "^5.12.1",
+    "typescript": "^3.3.3"
+  },
+  "dependencies": {
+    "async-polling": "^0.2.1",
+    "express": "^4.16.4",
+    "express-ws": "^4.0.0",
+    "node-fetch": "^2.6.1",
+    "ws": "^7.4.3"
+  }
+}
