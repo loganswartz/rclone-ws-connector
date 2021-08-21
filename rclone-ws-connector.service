@@ -1,0 +1,14 @@
+[Unit]
+Description=Connector for rclone-web-progress
+After=network.target
+StartLimitIntervalSec=0
+
+[Service]
+Type=simple
+Restart=always
+RestartSec=1
+User=www-data
+ExecStart=node /opt/rclone-ws-connector/dist/app.js
+
+[Install]
+WantedBy=multi-user.target
